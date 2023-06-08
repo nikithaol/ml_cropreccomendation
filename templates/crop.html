@@ -1,0 +1,113 @@
+<html>
+    <head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	
+		<!-- Font-Awesome -->
+		<link rel="icon" href="../static/logo.png">
+	
+		<script src="https://kit.fontawesome.com/97132b68f0.js" crossorigin="anonymous"></script>
+	
+	
+		<title>AgroConsultant</title>
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			&nbsp;
+			<img src="{{ url_for('static',filename='../static/logo.png') }}" style="width:25px;height:25px">
+           &nbsp;&nbsp;
+			<a class="navbar-brand" href="/">AgroConsultant</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="/">Home <span class="sr-only"></span></a>
+					</li>
+	
+					<li class="nav-item">
+						<a class="nav-link" href="/predict">Predict</a>
+					</li>
+	
+					<li class="nav-item">
+						<a class="nav-link" href="/dashboard">Dashboard</a>
+					</li>
+					
+					
+					
+	
+	
+				</ul>
+			</div>
+		</nav>
+	
+		<!--CAROUSEL-->
+	
+	
+		<div class="container my-4">
+			
+			<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="{{ url_for('static',filename='../static/farmimage.jpeg') }}"class="d-block w-100" alt="...">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>Crop Predictor</h5>
+							<p><b>Predict the type of Crop to be grown</b>
+							</p>
+						</div>
+					</div>
+					<!--<div class="carousel-item">
+						<img src="{{ url_for('static',filename='../static/farmimage.jpeg') }}" class="d-block w-100" alt="...">
+						<div class="carousel-caption d-none d-md-block">
+						</div>
+					</div>-->
+					<!--<div class="carousel-item">
+						<img src="{{ url_for('static',filename='../static/farmimage.jpeg') }}" class="d-block w-100" alt="...">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>Crop Predictor</h5>
+							<p><b>Predict the type of Crop to be grown</b>
+							</p>
+						</div>
+					</div>-->
+				</div>
+			</div>
+			
+		</div>
+	
+		<!-- blog -->
+		<div class="container my-2">
+			<!-- main -->
+	
+			<div class="row featurette mx-2">
+				<div class="col-md-7 my-4">
+					<h2 class="featurette-heading">Overview<span class="text-muted"></span></h2>
+					<p class="lead">Our technology supports you in farming process by using the most recent machine learning and deep learning methods. With the help of our platform, you can learn about the local demographics and the various aspects that affect crop development and thus make well-informed decisions. Our solution is made to guarantee that your crops stay healthy and generate a remarkable amount while offering you a seamless user experience.</div>
+				<div class="col-md-5 my-4">
+					<img src="{{ url_for('static',filename='../static/img1.jpg') }}" class="d-block w-100" alt="...">
+				</div>
+			</div>
+	
+	
+			<div class="row featurette mx-2">
+				<div class="col-md-7 order-md-2 my-3">
+					<h2 class="featurette-heading">Parameters<span class="text-muted"></span></h2>
+					<p class="lead">
+						Based on the requirements like which kind of climate is best suited for growing a particular crop,what will be the amount of soil nutrients required for that crop to be grown,what will be the amount of soil properties required,what will be the estimated rain for that crop,
+						such that the crop can sustain more life and has no harm from threats,all these parameters are taken into consideration for building the model,which takes up these parameters and predicts the best type of crop/fruit
+						that the farmer must grow.
+				</div>
+				<div class="col-md-5 order-md-1 my-5">
+					<img src="{{ url_for('static',filename='../static/img2.jpeg') }}" height="250" ,width="250" class="d-block w-100" alt="...">
+				</div>
+			</div>
+	
+		</div>
+		
+	</body>
+</html>
